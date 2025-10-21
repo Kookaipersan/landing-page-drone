@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-gray-400: oklch(70.7% 0.022 261.325);
@@ -259,6 +260,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-amber-500 {
+    background-color: var(--color-amber-500);
+  }
   .bg-gray-400 {
     background-color: var(--color-gray-400);
   }
@@ -268,17 +272,20 @@
   .bg-green-600 {
     background-color: var(--color-green-600);
   }
-  .bg-\[url\(\.\/src\/img\/vue\.jpg\)\] {
-    background-image: url(./src/img/vue.jpg);
+  .bg-\[url\(\.\/img\/vue\.jpg\)\] {
+    background-image: url(./img/vue.jpg);
   }
-  .bg-\[url\(src\/img\/vue\.jpg\)\] {
-    background-image: url(src/img/vue.jpg);
+  .bg-\[url\(img\/vue\.jpg\)\] {
+    background-image: url(img/vue.jpg);
   }
   .bg-cover {
     background-size: cover;
   }
   .bg-right {
     background-position: right;
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
