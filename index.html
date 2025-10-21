@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <title>Landing - Formation Drone</title>
+    <!-- CSS Tailwind -->
+    <link rel="stylesheet" href="/landing-page-drone/src/output.css">
 </head>
+<body class="font-poppins">
 
-<body class= "font-poppins">
+  <!-- Section principale -->
+  <section class="relative h-screen bg-cover bg-right bg-[url(/landing-page-drone/src/img/vue.jpg)]">
 
-  <section class="relative h-screen bg-cover bg-right bg-[url(./src/img/vue.jpg)]">
- 
+    <!-- Contenu centré -->
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-5xl md:text-6xl lg:text-7xl text-white font-light text-center">
+        Formation Drone
+        <p class="text-sm mt-2">27-30 Octobre 2025</p>
 
-  <div class="absolute inset-0 flex flex-col justify-center items-center text-5xl md:text-6xl lg:text-7xl text-white font-light"
-  >Formation Drone <br>
-  <p class="text-sm"> 27-30 Octobre 2025</p> 
-  <div class="flex flex-col justify-center items-center mt-20">
-  <button id="countdownBtn" 
-  class="mt-6 flex items-center gap-3 bg-gray-500 text-white font-semibold py-3 px-6 rounded-full text-lg opacity-80 cursor-not-allowed transition " disabled>
-  <span id="countdownText">Disponible dans ...</span>
-</button>
-  </div>
-  </div>
-  <div class="absolute bottom-6 left-6 flex gap-6 text-white text-sm font-light z-10">
-        <img class="w-10 h-10" src="./src/img/icons8-drone-64.png" alt="drone">
-            <img class="w-10 h-10 mt-2" src="./src/img/icons8-vent-arrièrecss-48.png" alt="Tailwind">
-              <img class="w-10 h-10 mt-2" src="./src/img/icons8-github-50.png" alt="GitHub">
-   
-            
+        <!-- Bouton compteur -->
+        <div class="mt-20">
+          <button id="countdownBtn" 
+                  class="flex items-center gap-3 bg-gray-500 text-white font-semibold py-3 px-6 rounded-full text-lg opacity-80 cursor-not-allowed transition" 
+                  disabled>
+            <span id="countdownText">Disponible dans ...</span>
+          </button>
+        </div>
+    </div>
 
- </div>
+    <!-- Icônes en bas à gauche -->
+    <div class="absolute bottom-6 left-6 flex gap-6 text-white text-sm font-light z-10">
+        <img class="w-10 h-10" src="/landing-page-drone/src/img/icons8-drone-64.png" alt="drone">
+        <img class="w-10 h-10" src="/landing-page-drone/src/img/icons8-vent-arrièrecss-48.png" alt="Tailwind">
+        <img class="w-10 h-10" src="/landing-page-drone/src/img/icons8-github-50.png" alt="GitHub">
+    </div>
+
   </section>
 
-<script src="./script.js" defer></script>
+  <!-- Script compteur -->
+  <script src="/landing-page-drone/script.js" defer></script>
 </body>
 </html>
